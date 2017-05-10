@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>	
+<title>CRUD Demo</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ng-app="CRUD" ng-controller="myCtrl">
+	<header>
+		<img src="images/mongo.png" style="height:50px; width:100%">
+	<div id="Reg">	
+	<form action="\insert" method="post">
+		<table>
+	<thead>	<h2>New Registration</h2></thead>
+<tr><td>Enter Your Name :</td><td><input type="text" class="name" id="glow"  name="_id"></td></tr>
+<tr><td>Enter Your Roll Number:</td><td><input type="number" id="glow" class="number" name="number"></td></tr>
+<tr><td>Enter Your Mobile Number :</td><td> <input type="number" id="glow" name="mobile"></td></tr></table>
+<input type="submit" value="Insert">
+	</form>
+	</div>
+	<hr>
+	<div id="view">
+<form action="\getter" method="get">
+	<table>
+	<thead><h2>Retrieve Your details</h2></thead>
+<tr><td>Enter Your Name :<input type="text" id="glow" name="roll" class="name1"></td></tr>
+<tr><td><input type="submit" value="Get Details" ></td></tr></table>
+</form>
+	</div>
+<hr>
+<div id="delete">
+<form action="\delete" method="post">
+	<table>
+	<thead>	<h2>Delete Your Records</h2></thead>
+	<tr><td>Enter Your Name :<input type="text" id="glow" name="_id"></td></tr>
+	<tr><td><input type="submit" value="Get Details"></td></tr></table>
+</form>
+</div>
+<hr>
+<div id="db">
+<form action="\allDbs" method ="get">
+	<h2>View My Db's</h2>
+		<input type="submit" value="Get dbs"></form>
+</div>
+<hr/>
+<div id="updte">
+		<form action="\updte" method="post">
+	<table>
+	<thead><h2>Update your details </h2></thead>
+<tr><td>Enter Your Name :<input type="text" id="glow" name="_id"></td></tr>
+<tr><td>Enter Your Number :<input type="text" id="glow" name="number"></td></tr>
+<tr><td>Enter Your Mobile :<input type="text" id="glow" name="mobile"></td></tr>
+<tr><td><input type="submit" value="Update" ></td></tr></table>
+</form>
+<div>
+</body>
+</html>
